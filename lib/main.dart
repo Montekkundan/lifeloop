@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:lifeloop/colors.dart';
+import 'package:lifeloop/responsive/responsive_layout.dart';
+import 'package:lifeloop/screens/mobile_screen_layout.dart';
+import 'package:lifeloop/screens/web_screen_layout.dart';
 
 void main() {
   runApp(const MyApp());
@@ -29,7 +32,7 @@ class MyApp extends StatelessWidget {
           onSurface: Colors.black,
         ).copyWith(background: backgroundColor),
       ),
-      home: const Text('Hello World'),
+      home: const ResponsiveLayout(mobileScreenLayout: MobileScreenLayout(), webScreenLayout: WebScreenLayout()),
     );
   }
 }
