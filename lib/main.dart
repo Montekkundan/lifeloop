@@ -3,10 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:lifeloop/colors.dart';
 import 'package:lifeloop/features/landing/screens/landing_screen.dart';
 import 'package:lifeloop/firebase_options.dart';
-import 'package:lifeloop/responsive/responsive_layout.dart';
-import 'package:lifeloop/screens/mobile_screen_layout.dart';
-import 'package:lifeloop/screens/web_screen_layout.dart';
-
+import 'package:lifeloop/router.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
@@ -27,6 +24,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: backgroundColor, 
     ),
+    onGenerateRoute: (settings) => generateRoute(settings),
     home: const LandingScreen()
     );
   }
