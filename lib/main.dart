@@ -18,21 +18,12 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Lifeloop Ui',
       theme: ThemeData.dark().copyWith(
-        colorScheme: const ColorScheme(
-          brightness: Brightness.dark,
-          primary: Colors.blue,
-          onPrimary: Colors.white,
-          secondary: Colors.green,
-          onSecondary: Colors.white,
-          error: Colors.red,
-          onError: Colors.white,
-          onBackground: Colors.black,
-          background: Colors.white,
-          surface: Colors.white,
-          onSurface: Colors.black,
-        ).copyWith(background: backgroundColor),
-      ),
-      home: const ResponsiveLayout(mobileScreenLayout: MobileScreenLayout(), webScreenLayout: WebScreenLayout()),
+        scaffoldBackgroundColor: backgroundColor, 
+    ),
+    home: const ResponsiveLayout(
+      mobileScreenLayout: MobileScreenLayout(),
+       webScreenLayout: WebScreenLayout()
+       ),
     );
   }
 }
