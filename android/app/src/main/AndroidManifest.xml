@@ -3,6 +3,7 @@
         android:label="lifeloop"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+        android:name=".FlutterMultiDexApplication"
         <activity
             android:name=".MainActivity"
             android:exported="true"
