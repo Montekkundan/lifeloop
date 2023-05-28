@@ -41,6 +41,8 @@ dependencies:
   firebase_storage: ^11.2.1
   country_picker: ^2.0.20
   flutter_riverpod: ^2.3.6
+  url_launcher: ^6.1.11
+  flutter_linkify: ^6.0.0
 
 dev_dependencies:
   flutter_test:
