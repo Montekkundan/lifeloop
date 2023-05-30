@@ -47,5 +47,15 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+	<key>CFBundleURLTypes</key>
+<array>
+    <dict>
+        <key>CFBundleURLSchemes</key>
+        <array>
+            <string>app-1-1092706573541-ios-35350e44ab0c32933cc80c</string>
+        </array>
+    </dict>
+</array>
+
 </dict>
 </plist>
